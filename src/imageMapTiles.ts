@@ -17,9 +17,6 @@ let image: sharp.Sharp;
 let metadata: sharp.Metadata;
 
 export const imageMapTiles = async (imagePath: string, options: Options) => {
-  console.log("imagePath: " + imagePath);
-  console.log("options: " + options);
-
   image = sharp(imagePath);
   metadata = await image.metadata();
 
