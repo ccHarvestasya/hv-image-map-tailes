@@ -1,0 +1,35 @@
+{
+  "name": "hv-image-map-tailes",
+  "version": "1.0.0",
+  "type": "module",
+  "packageManager": "yarn@4.1.1",
+  "volta": {
+    "node": "18.19.1",
+    "npm": "10.2.4"
+  },
+  "author": "Mimosa Harvestasya",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node18": "^18.2.4",
+    "@types/node": "18",
+    "@typescript-eslint/eslint-plugin": "^7.13.1",
+    "@typescript-eslint/parser": "^7.13.1",
+    "eslint": "8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.2",
+    "tsx": "^4.15.7",
+    "typescript": "^5.5.2"
+  },
+  "dependencies": {
+    "mkdirp": "^3.0.1",
+    "sharp": "^0.33.4"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./esm/index.d.ts",
+        "default": "./esm/index.js"
+      }
+    }
+  }
+}
